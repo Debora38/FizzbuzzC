@@ -9,6 +9,14 @@ namespace fizzbuzzC
 
         }
 
+        public void Run()
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                Console.WriteLine(FizzBuzz(i));
+            }
+        }
+
         public object FizzBuzz(int num)
         {
             if (num % 15 == 0)

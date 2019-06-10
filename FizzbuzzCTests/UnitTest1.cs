@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 using fizzbuzzC;
 
@@ -47,6 +48,12 @@ namespace Tests
             Assert.AreEqual(4, _fizzbuzzC.FizzBuzz(4));
             Assert.AreEqual(7, _fizzbuzzC.FizzBuzz(7));
             Assert.AreEqual(37, _fizzbuzzC.FizzBuzz(37));
+        }
+
+        [Test]
+        public void ShouldRun()
+        {
+            _fizzbuzzC.Run();
         }
     }
 }
