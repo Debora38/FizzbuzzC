@@ -11,7 +11,11 @@ namespace fizzbuzzC
 
         public object FizzBuzz(int num)
         {
-            if (num % 3 == 0)
+            if (num % 15 == 0)
+            {
+                return "Fizzbuzz";
+            }
+            else if (num % 3 == 0)
             {
                 return "Fizz";
             }

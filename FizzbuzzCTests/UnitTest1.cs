@@ -31,5 +31,14 @@ namespace Tests
             Assert.AreEqual("Buzz", _fizzbuzzC.FizzBuzz(50));
             Assert.AreNotEqual("Buzz", _fizzbuzzC.FizzBuzz(34));
         }
+
+        [Test]
+        public void ShouldBeFizzBuzz()
+        {
+            Assert.AreEqual("Fizzbuzz", _fizzbuzzC.FizzBuzz(15));
+            Assert.AreEqual("Fizzbuzz", _fizzbuzzC.FizzBuzz(30));
+            Assert.AreEqual("Fizzbuzz", _fizzbuzzC.FizzBuzz(60));
+            Assert.AreNotEqual("Fizzbuzz", _fizzbuzzC.FizzBuzz(63));
+        }
     }
 }
