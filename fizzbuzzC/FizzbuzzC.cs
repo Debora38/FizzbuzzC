@@ -9,9 +9,16 @@ namespace fizzbuzzC
 
         }
 
-        public object Fizz()
+        public object Fizz(int num)
         {
-            return "Hello World!";
+            if (num == 3)
+            {
+                return "Fizz";
+            }
+            else
+            {
+                return num;
+            }
         }
     }
 }
