@@ -1,18 +1,24 @@
 using NUnit.Framework;
+using fizzbuzzC;
 
 namespace Tests
 {
-    public class Tests
+    [TestFixture]
+    public class fizzbuzzC_Tests
     {
+
+        private FizzbuzzC _fizzbuzzC;
         [SetUp]
-        public void Setup()
+        public void FizzbuzzC_ShouldBeFizzbuzz()
         {
+            _fizzbuzzC = new FizzbuzzC();
         }
 
         [Test]
-        public void Test1()
+        public void ShouldBeFizz()
         {
-            Assert.Pass();
+            var result = _fizzbuzzC.Fizz();
+            Assert.AreEqual("Hello World!", result);
         }
     }
 }

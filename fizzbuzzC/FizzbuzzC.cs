@@ -2,11 +2,16 @@
 
 namespace fizzbuzzC
 {
-    class Program
+    public class FizzbuzzC
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+
+        }
+
+        public object Fizz()
+        {
+            return "Hello World!";
         }
     }
 }
