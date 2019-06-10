@@ -17,8 +17,9 @@ namespace Tests
         [Test]
         public void ShouldBeFizz()
         {
-            var result = _fizzbuzzC.Fizz(3);
-            Assert.AreEqual("Fizz", result);
+            Assert.AreEqual("Fizz", _fizzbuzzC.Fizz(3));
+            Assert.AreEqual("Fizz", _fizzbuzzC.Fizz(6));
+            Assert.AreEqual("Fizz", _fizzbuzzC.Fizz(63));
         }
     }
 }
